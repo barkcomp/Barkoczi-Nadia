@@ -1,0 +1,651 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Barkoczi Nadia - List of Scientific Papers</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #filterInput {
+      padding: 8px;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    #itemList {
+      list-style-type: none;
+      padding: 0;
+    }
+    #itemList li {
+      padding: 8px;
+      margin: 5px 0;
+      background-color: #4052D6;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .card {
+	  display: none;
+	  position: fixed;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  padding: 20px;
+	  border-radius: 8px;
+	  background-color: #4052D6;
+	  color: #fff;
+	  z-index: 1000;
+	  display: flex;
+	  flex-direction: row;
+	  gap: 20px;
+	  width: fit-content;
+	  max-width: 90vw;
+	}
+    .card img {
+      width: 250px;
+      border-radius: 8px;
+    }
+    .card h3 { margin: 0 0 10px; }
+    .close-btn {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #fff;
+    }
+	.close-btn {
+	  position: absolute;
+	  top: 5px;
+	  right: 8px;
+	  font-size: 18px;
+	  cursor: pointer;
+	  background: none;
+	  border: none;
+      color: #ff4444;
+      font-weight: bold;
+      line-height: 1;
+     padding: 0;
+	}
+
+	.close-btn:hover {
+      color: #cc0000;
+	}
+
+  </style>
+</head>
+<body>
+		
+		<header id="header" class="head">
+				<a href="index.html#one" class="title">&larr; Back</a>
+				<nav>
+					
+				</nav>
+			</header>
+
+  <h1>List of Scientific Papers</h1>
+  <input type="text" id="filterInput" placeholder="Search Papers..." />
+
+  <ul id="itemList">
+	<li data-card="00">Innovative Approaches to Contemporary Trends in Education</li>
+	<li data-card="01">AI -Driven Pedagogical Approaches to Foreign Language Teaching and Learning</li>
+	<li data-card="02">Emerging Technologies as Catalysts in the Experiential Learning of Student Teachers</li>
+	<li data-card="03">Conference - Technologies and Techniques to Support Sustainable Education in the Academic Sphere: VR Dimension Towards Pedagogy 5.0 - Learning Experience Reconstruction</li>
+	<li data-card="04">Educar para la diversidad: inclusión, bienestar y sostenibilidad en contextos emergentes</li>
+	<li data-card="05">Perspectives on New Directions and Research Topics in Higher Pedagogical Education</li>
+    <li data-card="06">The Reinforcement of Teachers’ Design Thinking in STEM Education by Integrating AI Tools – a Literature Review</li>
+    <li data-card="07">A New Educational Paradigm to Decolonise Marketing Education and Practice</li>
+    <li data-card="08">Drivers of Pre-service and In-service Teachers’ Acceptance and Integration of Emerging Technologies into Pedagogical Practices</li>
+    <li data-card="09">Transformando la educación: tecnología, innovación y sociedad en la era digital</li>
+    <li data-card="10">Innovations in Digital Pedagogy: Application of Artificial Intelligence Technologies in the Development of Educational Visual Content</li>
+    <li data-card="11">Systems of Attitudes and Values Involved in the Adoption of Technology in Education</li>
+    <li data-card="12">The Impact of Artificial Intelligence on Personalized Learning in STEM Education</li>
+	<li data-card="13">Circular Pedagogy to Support Technological Universities Cultural Transformation</li>
+    <li data-card="14">Integrating digital technologies into students' pedagogical practice</li>
+    <li data-card="15">Digitization of teaching-learning-evaluation as a vector of intercultural alignment</li>
+    <li data-card="16">Teaching Strategies Based on the Use of Artificial Intelligence Algorithms</li>
+    <li data-card="17">Technology Acceptance Theories in Students' Learning Contexts</li>
+    <li data-card="18">The Use of Educational Technologies in The Students' Pedagogical Practice Activities</li>
+    <li data-card="19">Technology and Education as Drivers of the Fourth Industrial Revolution Through the Lens of the New Science of Learning</li>
+	<li data-card="20">Enhancing Human Security by Transforming Education Through Science, Technology, and Innovations</li>
+    <li data-card="21">Conference Technologies and Techniques to Support Sustainable Education in the Academic Sphere</li>
+    <li data-card="22">Models of Technology Integration in Students' Pedagogical Practice, Scientific Bulletin, Fascicula Pedagogy-Psychology-Methodical</li>
+    <li data-card="23">Creativity and Solving Math Problems</li>
+    <li data-card="24">The Use of Educational Technologies in the Lesson</li>
+    <li data-card="25">Mathematical Reasoning and Solving Mathematical Problems</li>
+    <li data-card="26">The Impact of Learning Culture on the Use of Digital Tools</li>
+	<li data-card="27">The Impact of New Technologies Diffusion on Open Educational Practices</li>
+    <li data-card="28">Didactics of Teaching Economic Disciplines</li>
+    <li data-card="29">Arithmetic Notes Solving Mathematical Problems by Methods Specific to the Primary School Cycle</li>
+    <li data-card="30">Computer Assisted Training – Laboratory Support</li>
+    <li data-card="31">Guide to Pedagogical Practice</li>
+    <li data-card="32">Pedagogical Practice Book</li>
+    <li data-card="33">Digital Technologies and Culture in Education</li>
+	<li data-card="34">Cultural Values of Consumers and Adoption of New Technologies</li>
+    <li data-card="35">The Impact of Information Sources on Consumer Behavior in Order to Adopt a New Technology</li>
+    <li data-card="36">An Innovation Diffusion Model for New Mobile Technologies Acceptance</li>
+    <li data-card="37">Theoretical Aspects of the Acceptance of New Technologies on the Smartphone Market</li>
+    <li data-card="38">Consumer Neuroscience - Research Instruments and Short History</li>
+    <li data-card="39">Theoretical Aspects of Using AHP Method in Forecasting the Number of New Technology Potential Adopters</li>
+    <li data-card="40">A Bass Diffusion Model Analysis in a Marketing Approach on the Mobile Phone Market</li>
+	<li data-card="41">Predicting the Adoption by the Young Consumers of a New Technology on the Mobile Phone Market Using the Bass Diffusion Model</li>
+    <li data-card="42">Current Status of the Interferences between Technology Diffusion and Marketing Management</li>
+    <li data-card="43">Technology Diffusion and the Role of Marketing in Adopting the New Technologies on the Mobile Phone Market</li>
+	<li data-card="44">Marketing. Seminar Notebook</li>
+  </ul>
+  
+  <div id="00" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/00.jpeg" alt="00" />
+    <div>
+		<h3>Innovative Approaches to Contemporary Trends in Education (pp.239-252)</h3>
+		<p><b>Barkoczi</b>,<b> N.</b>, Roman, A. F. (2025). Pedagogical Implications of the Adoption of Educational Technologies in Initial Teacher Training. In Roman, A., Balaş, E., Dughi, T., Rad, D., Costin, A., Torkos, H. & Coșarbă, E. (Eds)</p>
+		<a href="https://doi.org/10.3726/b22698" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="01" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/01.jpeg" alt="01" />
+    <div>
+		<h3>AI -Driven Pedagogical Approaches to Foreign Language Teaching and Learning.</h3>
+		<p>Achim, F., <b>Barkoczi</b>, <b>N.</b>, Boja, A., Bud, I., Nechita, A., Todea, L., & Peculea, L. (2025). Scientific Bulletin, Fascicula Pedagogy-Psychology-Methodical, Series A, vol. XXV, 9-18.</p>
+		<a href="https://dspp.utcluj.ro/files/publicatii/Buletin%20DSPP%20XXV%20doi.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="02" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/02.jpeg" alt="02" />
+    <div>
+		<h3>Emerging Technologies as Catalysts in the Experiential Learning of Student Teachers</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2025). Scientific Bulletin, Fascicula Pedagogy-Psychology-Methodical, Series A, vol. XXV, 19-29. </p>
+		<a href="https://dspp.utcluj.ro/arhiva-articole/articles/156.html?file=files/articole+buletin/Buletin+DSPP+XXV-19-29.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="03" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/03.jpeg" alt="03" />
+    <div>
+		<h3>Conference - Technologies and Techniques to Support Sustainable Education in the Academic Sphere: VR Dimension Towards Pedagogy 5.0 - Learning Experience Reconstruction, Conference Proceedings Book 4, Sofia 2025. </h3>
+		<p>Achim, F., <b>Barkoczi</b>, <b>N.</b>, Boja, A., Bud, I., Nechita, A., & Todea, L. (2025). Integrating Artificial Intelligence into Blended Learning to Support Teacher Professional Development and Student Learning in Higher Education, 3rd EL@RA.</p>
+		<a href="https://www.researchgate.net/profile/Lucia-Morales-4/publication/395297115_VR_Dimension_Towards_Pedagogy_50_-Learning_Experience_Reconstruction/links/68bad1b01c541042f30687f9/VR-Dimension-Towards-Pedagogy-50-Learning-Experience-Reconstruction.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="04" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/04.jpeg" alt="04" />
+    <div>
+		<h3>Educar para la diversidad: inclusión, bienestar y sostenibilidad en contextos emergentes</h3>
+		<p>Hervás-Gómez, C., Díaz-Noguera, M. D., <b>Barkoczi</b>, <b>N.</b>, Ballesteros-Regaña, C., Domínguez-González, M. de los Á. (2025). </p>
+		<a href="https://www.dykinson.com/libros/educacion-para-la-diversidad-inclusion-bienestar-y-sostenibilidad-en-contextos-emergentes/9788410706989/" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="05" class="card">
+    <button class="close-btn">&times;</button>
+    <div>
+      <h3>Perspectives on New Directions and Research Topics in Higher Pedagogical Education (pp. 644-653)</h3>
+      <p>M. Maier, <b>N. Barkoczi</b>, A. Nechita (2025) An Overview of the Optimization of Approaches in the Initial and Continuous Training of Future Teachers, EDULEARN25 Proceedings.</p>
+	  <a href="https://doi.org/10.21125/edulearn.2025.0252" class="button">Learn More</a>
+    </div>
+  </div>
+  
+  <div id="06" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/06.jpeg" alt="06" />
+    <div>
+      <h3>The Reinforcement of Teachers’ Design Thinking in STEM Education by Integrating AI Tools – a Literature Review</h3>
+      <p><b>Barkoczi, N.</b> (2024). Scientific Bulletin, Fascicula Pedagogy-Psychology-Methodical, Series A, vol. XXIV, 5-17.(2024)</p>
+	  <ul class="actions">
+			<li><a href="https://doi.org/10.37193/bs-ppm.24.01" class="button">Learn more</a></li>
+		</ul>
+    </div>
+  </div>
+
+  <div id="07" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/07.jpeg" alt="07" />
+    <div>
+		<h3>A New Educational Paradigm to Decolonise Marketing Education and Practice</h3>
+		<p>Peev, I., Pop, L., <b>Barkoczi, N.</b>, Coetzer, J.-H., Gilani, H., Rajmil, D., & Morales, L. (2024).In Decolonizing Marketing Theory and Practice: Beyond Inclusivity and Sustainability Debates (pp. 3-23). </p>
+		
+			<a href="https://doi.org/10.37193/bs-ppm.24.01" class="button">Learn more</a>
+		
+	</div>
+  </div>
+
+  <div id="08" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/08.jpeg" alt="08" />
+    <div>
+      <h3>Drivers of Pre-service and In-service Teachers’ Acceptance and Integration of Emerging Technologies into Pedagogical Practices</h3>
+      <p><b>Barkoczi, N.</b>, Roman, A. F., Maier, M. L. (2024). Strawberries are small, red, juicy fruits known for their sweet flavor and are often used in desserts, smoothies, and salads.</p>
+		<a href="https://doi.org/10.24193/ed21.2024.28.12" class="button">Learn more</a>
+	</div>
+  </div>
+
+  <div id="09" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/09.jpeg" alt="09" />
+    <div>
+      <h3>Transformando la educación: tecnología, innovación y sociedad en la era digital</h3>
+      <p>Hervás-Gómez, C., Díaz-Noguera, M. D., Grosu, E. F., Mâță, L., Hăisan, A.-A., <b>Barkoczi, N.</b> (2024).</p>
+    		<a href="https://www.dykinson.com/libros/transformando-la-educacion-tecnologia-innovacion-y-sociedad-en-la-era-digital/9788410702516/" class="button">Learn more</a>
+    
+	</div>
+  </div>
+
+  <div id="10" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/09.jpeg" alt="10" />
+    <div>
+      <h3>Innovations in Digital Pedagogy: Application of Artificial Intelligence Technologies in the Development of Educational Visual Content</h3>
+      <p>Hervás-Gómez, C., Díaz-Noguera, M. D., Grosu, E. F., Mâță, L., Hăisan, A.-A., <b>Barkoczi, N.</b> (2024). Chapter VII. In Transforming Education: Technology, Innovation, and Society in the Digital Age</p>
+    		<a href="https://www.dykinson.com/libros/transformando-la-educacion-tecnologia-innovacion-y-sociedad-en-la-era-digital/9788410702516/" class="button">Learn more</a>
+
+	</div>
+  </div>
+
+  <div id="11" class="card">
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Systems of Attitudes and Values Involved in the Adoption of Technology in Education</h3>
+		<p>Marian, C., <b>Barkoczi</b>, <b>N.</b> (2024). 16th International Conference on Education and New Learning Technologies, EDULEARN Proceedings, Palma, Spain, 1st - 3rd July 2024.</p>
+		<a href="https://www.researchgate.net/publication/382370548_SYSTEMS_OF_ATTITUDES_AND_VALUES_INVOLVED_IN_THE_ADOPTION_OF_TECHNOLOGY_IN_EDUCATION" class="button">Learn more</a>
+
+	</div>
+  </div>
+
+  <div id="12" class="card">
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>The Impact of Artificial Intelligence on Personalized Learning in STEM Education (pp. 4980-4989)</h3>
+		<p><b>N. Barkoczi</b>, M.L. Maier, A. Horvat-Marc (2024). INTED2024 Proceedings</p>
+		<a href="http://dx.doi.org/10.21125/inted.2024.1289" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="13" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/13.jpeg" alt="13" />
+    <div>
+		<h3>"Circular Pedagogy to Support Technological Universities Cultural Transformation" Irish Journal of Academic Practice: Vol. 11: Iss. 2, Article 4</h3>
+		<p>Peev, Ivaylo; Coetzer, Jon-Hans; <b>Barkoczi</b>, <b>Nadia</b>; Stefan, Iulia; Todorov, Todor; Flynn, Patrick; Marian, Claudia; Munteanu, Sonia; Pop, Lia; and Morales, Lucia (2024)</p>
+		<a href="https://arrow.tudublin.ie/ijap/vol11/iss2/4" class="button">Learn more</a>
+	</div>
+  </div>
+
+  <div id="14" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/14.jpeg" alt="14" />
+    <div>
+		<h3>Integrating digital technologies into students' pedagogical practice (pp. 45-65)</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2023). In M. Maier, The Use of New Technologies in Academic Training. Milestones in Initial and Continuing Teacher Training, GlobeEdit Publishing House, Chisinau place.</p>
+		<a href="https://www.researchgate.net/publication/371192984_The_Use_Of_Educational_Technologies_In_The_Students'_Pedagogical_Practice_Activities" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="15" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/15.jpeg" alt="15" />
+    <div>
+		<h3>Digitization of teaching-learning-evaluation as a vector of intercultural alignment</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2023). Scientific Bulletin, Fascicula Philology, Seria A, Vol. XXXII, 115-122.</p>
+		<a href="https://bslr.ubm.ro/files/2023/11.Barkoczi_Nadia_BSLR_2023.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="16" class="card">
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Teaching Strategies Based on the Use of Artificial Intelligence Algorithms</h3>
+		<p>Maier, M., <b>Barkoczi</b>, <b>N.</b> (2023). Perspectives on the Initial and Continuous Training of Teaching Staff (pp. 473-481), ICERI2023 Proceedings.</p>
+		<a href="https://doi.org/10.21125/iceri.2023.0180" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="17" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/17.jpeg" alt="17" />
+    <div>
+		<h3>Technology Acceptance Theories in Students' Learning Contexts</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Roman, A. F. (2023). Contexts. In Balaş, E., Roman, A., & Rad, D. (Eds.), Students' well-being and teaching-learning efficiency during and post-pandemic period. (pp.115-126). Germany: Peter Lang.</p>
+		<a href="https://doi.org/10.3726/b20818" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="18" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/18.jpeg" alt="18" />
+    <div>
+		<h3>The Use of Educational Technologies in The Students' Pedagogical Practice Activities</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Roman, A. F. (2023). In I. Albulescu, & C. Stan (Eds.), Education, Reflection, Development - ERD 2022, vol 6. European Proceedings of Educational Sciences (pp. 224-234). European Publisher.</p>
+		<a href="https://doi.org/10.15405/epes.23056.21" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="19" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/19.jpeg" alt="19" />
+    <div>
+		<h3>Technology and Education as Drivers of the Fourth Industrial Revolution Through the Lens of the New Science of Learning</h3>
+		<p>Stefan, I., <b>Barkoczi</b>, <b>N.</b>, Todorov, T., Peev, I., Pop, L., Marian, C., Campian, C., Munteanu, S.-C., Flynn P. &; Morales, L. (2023). In: Zaphiris, P., Ioannou, A. (eds) Learning and Collaboration Technologies. HCII 2023. Lecture Notes in Computer Science, vol 14040. Springer, Cham.</p>
+		<a href="https://doi.org/10.1007/978-3-031-34411-4_11" class="button">Learn more</a>
+	</div>
+  </div>
+
+  <div id="20" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/20.jpeg" alt="20" />
+    <div>
+		<h3>Enhancing Human Security by Transforming Education Through Science, Technology, and Innovations</h3>
+		<p>Coetzer, J.-H., Morales, L., Flynn, P., Pop, L., <b>Barkoczi</b>, <b>N.</b>, Munteanu, S., . . . . Rajdmil, D. (2023). Cadmus Journal, Volume 5 – Issue 1.</p>
+		<a href="https://cadmusjournal.org/node/973" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="21" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/21.jpeg" alt="21" />
+    <div>
+		<h3>Conference Technologies and Techniques to Support Sustainable Education in the Academic Sphere, EUt+ Academic Press(pp. 33-41)</h3>
+		<p>Marian, C., <b>Barkoczi</b>, <b>N.</b>, Pop, L., Morales, L., Stefan, I., Flynn, P., Peev, I., Todorov, T., Munteanu, S., Campian, C. (2023).  Transdisciplinarity – A Problem of Multiplying Languages, EL@RA.</p>
+		<a href="https://www.researchgate.net/publication/388486476_Pedagogy50_-_TECHNOLOGIES_AND_TECHNIQUES_TO_SUPPORT_SUSTAINABLE_EDUCATION_IN_THE_ACADEMIC_SPHERE_CONFERENCE_PROCEEDINGS_VOLUME_II" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="22" class="card">
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Models of Technology Integration in Students' Pedagogical Practice</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2023). Scientific Bulletin, Fascicula Pedagogy-Psychology-Methodical, Series A, vol. XXIII, 5-15. </p>
+		<a href="http://researchgate.net/publication/391342206_Models_of_Technology_Integration_in_Students'_Pedagogical_Practice" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="23" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/23.jpeg" alt="23" />
+    <div>
+		<h3>Creativity and Solving Math Problems</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Horvat-Marc, A. (2022). National Conference with International Participation Theories, values and psychopedagogical practices, May 7, 2022, Baia Mare, Romania, Scientific Bulletin, Pedagogy-Psychology-Methodical Fascicula, Seria A, Vol. XXII, 4-16.</p>
+		<a href="https://journals.indexcopernicus.com/api/file/viewByFileId/1869788" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="24" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/24.jpeg" alt="24" />
+    <div>
+		<h3>The Use of Educational Technologies in the Lesson</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2022). Scientific Bulletin, Pedagogy-Psychology-Methodical Fascicula, Series A, Vol. XXI, 17-24.</p>
+		<a href="https://dspp.utcluj.ro/files/publicatii/Buletin%20DSPP%20XXI.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="25" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/25.jpeg" alt="25" />
+    <div>
+		<h3>Mathematical Reasoning and Solving Mathematical Problems</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Horvat-Marc, A. (2022). Scientific Bulletin, Pedagogy-Psychology-Methodical Fascicula, Seria A, Vol. XXI, 25-37.</p>
+		<a href="https://dspp.utcluj.ro/files/publicatii/Buletin%20DSPP%20XXI.pdf" class="button">Learn more</a>
+	</div>
+  </div>
+
+  <div id="26" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/26.jpeg" alt="26" />
+    <div>
+		<h3>The Impact of Learning Culture on the Use of Digital Tools</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2022). Scientific Bulletin, Fascicula Philology, Series A, Vol. XXXI, ISSN: 1583-1264, 335-342.</p>
+		<a href="http://bslr.ubm.ro/files/2022/22.Barkoczi_Nadia_BSLR_2022.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="27" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/27.jpeg" alt="27" />
+    <div>
+		<h3>The Impact of New Technologies Diffusion on Open Educational Practices</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2022). In I. Albulescu, & C. Stan (Eds.), Education, Reflection, Development - ERD 2021, vol 2. European Proceedings of Educational Sciences, 412-422. European Publisher.</p>
+		<a href="https://doi.org/10.15405/epes.22032.41" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="28" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/28.jpeg" alt="28" />
+    <div>
+		<h3>Didactics of Teaching Economic Disciplines</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2022). UT PRESS Publishing House, Cluj-Napoca.</p>
+		<a href="https://biblioteca.utcluj.ro/files/carti-online-cu-coperta/601-2.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="29" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/29.jpeg" alt="29" />
+    <div>
+		<h3>Arithmetic Notes Solving Mathematical Problems by Methods Specific to the Primary School Cycle</h3>
+		<p>Horvat-Marc, A., <b>Barkoczi</b>, <b>N.</b> (2021). UT PRESS Publishing House, Cluj-Napoca.</p>
+		<a href="https://u.pcloud.link/publink/show?code=XZIg0aXZSfHPDoCu6Yfk0FyzPlEFTVR1wlc7" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="30" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/30.jpeg" alt="30" />
+    <div>
+      <h3>Computer Assisted Training – Laboratory Support</h3>
+      <p><b>Barkoczi</b>, <b>N.</b> (2021). UT PRESS Publishing House, Cluj-Napoca.</p>
+	  <a href="https://biblioteca.utcluj.ro/files/carti-online-cu-coperta/552-7.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="31" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/31.jpeg" alt="31" />
+    <div>
+		<h3>Guide to Pedagogical Practice</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Nechita, A. (2021). UT PRESS Publishing House, Cluj-Napoca.</p>
+		<a href="https://biblioteca.utcluj.ro/files/carti-online-cu-coperta/551-0.pdf" class="button">Learn more</a>
+	</div>
+  </div>
+
+  <div id="32" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/32.jpeg" alt="32" />
+    <div>
+		<h3>Pedagogical Practice Book</h3>
+		<p>Nechita, A., <b>Barkoczi</b>, <b>N.</b> (2021). UT PRESS Publishing House, Cluj-Napoca.</p>
+		<a href="https://biblioteca.utcluj.ro/files/carti-online-cu-coperta/544-2.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="33" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/33.jpeg" alt="33" />
+    <div>
+		<h3>Digital Technologies and Culture in Education</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2021). Scientific Bulletin, Fascicula Philologie, Seria A, Vol. XXX, ISSN: 1583-1264, 233-238.</p>
+		<a href="https://bslr.ubm.ro/files/2021/22.Barkoczi_(233-238)_BSLR_2021.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="34" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/34.jpeg" alt="34" />
+    <div>
+		<h3>Cultural Values of Consumers and Adoption of New Technologies</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2020). Scientific Bulletin, Fascicula Philologie], Seria A, Vol. XXIX, ISSN: 1583-1264, 195-204.</p>
+		<a href="http://bslr.ubm.ro/files/2020/16.Barkoczi_Nadia_(195-203)_BSLR_2020.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="35" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/35.jpeg" alt="35" />
+    <div>
+		<h3>The Impact of Information Sources on Consumer Behavior in Order to Adopt a New Technology</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>; Lobontiu, G. (2018). Paper presented and published abstract in Proceedings of the MakeLearn and TIIM International Conference "Integrated Economy and Society: Diversity, Creativity, and Technology", 16–18 May 2018, Naples, Italy, ISBN 978-961-6914-23-9, ISSN 2232-3309.</p>
+		<a href="https://toknowpress.net/ISBN/978-961-6914-23-9/papers/ML2018-056.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="36" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/36.jpeg" alt="36" />
+    <div>
+		<h3>An Innovation Diffusion Model for New Mobile Technologies Acceptance</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Lakatos, E. S., Bacali, L. A. (2017). 13th International Conference on Modern Technologies in Manufacturing, Cluj-Napoca, ISSN: 2261-236X.</p>
+		<a href="https://www.matec-conferences.org/articles/matecconf/pdf/2017/51/matecconf_mtem2017_07001.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="37" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/37.jpeg" alt="37" />
+    <div>
+		<h3>Theoretical Aspects of the Acceptance of New Technologies on the Smartphone Market</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Lobontiu, G. (2016). C3 - IOP Conference Series: Materials Science and Engineering, International Conference on Innovative Ideas in Science 2016, IIS 2016, vol. 200, no. 1, 10 - 11 November 2016, ISBN: 978-1-5108-4096-6, ISSN: 1757-8981 p. 480– 486.</p>
+		<a href="https://www.researchgate.net/publication/317158495_Theoretical_aspects_of_the_acceptance_of_new_technologies_on_the_smartphone_market" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="38" class="card"> <!-- Lipseste -->
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Consumer Neuroscience - Research Instruments and Short History</h3>
+		<p>Vaida, R., Bacali, L., Lakatos, E.S., <b>Barkoczi</b>, <b>N.</b> (2016). 5th Review of Management and Economic Engineering International Management Conference, September 22 - 24, 2016, Cluj-Napoca: Todesco Publishing House, ISSN 2247-8639, 200-205.</p>
+    </div>
+  </div>
+
+  <div id="39" class="card"> <!-- Lipseste-->
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Theoretical Aspects of Using AHP Method in Forecasting the Number of New Technology Potential Adopters</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Bacali, L., & Lobontiu, M. (2016). Proceedings of 5th Review of Management and Economic Engineering International Management Conference "From Management of Crisis to Management in a Time of Crisis", September 2016, Cluj-Napoca: Todesco Publishing House, ISSN 2247-8639, 435-441.</p>
+    </div>
+  </div>
+  <div id="40" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/40.jpeg" alt="40" />
+    <div>
+		<h3>A Bass Diffusion Model Analysis in a Marketing Approach on the Mobile Phone Market</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Lobontiu, M., Bacali, L. (2015). Proceedings of the MakeLearn & TIIM 2015 Joint International Scientific Conference, 27th – 29th May 2015, Bari, Italy, ISBN 978-961-6914-13-0, ISSN 2232-3309, ToKnowPress, 1283 - 1290.</p>
+		<a href="https://toknowpress.net/ISBN/978-961-6914-13-0/papers/ML15-246.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="41" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/41.jpeg" alt="41" />
+    <div>
+		<h3>Predicting the Adoption by the Young Consumers of a New Technology on the Mobile Phone Market Using the Bass Diffusion Model</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Lobonţiu, M., Bacali, L. (2015). Review of Management and Economic Engineering, Volume 14, no. 2 (56), Todesco Publishing House, Cluj-Napoca, 297-306, ISSN (print) 1583-624X, ISSN (online) 2360-2155.</p>
+		<a href="https://openurl.ebsco.com/viewer?sid=ebsco%3Aplink%3Ascholar-a&id=ebsco%3Agcd%3A108357245&crl=c&jrnl=1583624X&id_token_hint=eyJraWQiOiIxNzY5MTEwMjQ0MDQ3IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJzNTA3MTA2My5tYWluIiwiZGV2aWNlX2lkIjoiNWNlMzM1YWEtNjY2MC00YjQ4LWI4MWItMGUxNWEwMzc1NTFiIiwiYW1yIjpbImlwIl0sImlzcyI6Imh0dHBzOlwvXC9hdXRoLmVic2NvLnpvbmVcL2FwaVwvZGlzcGF0Y2hlciIsImNsaWVudF9pZCI6ImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5IiwiYXVkIjpbImh0dHBzOlwvXC9hdXRoLmVic2NvLnpvbmVcL2FwaVwvZGlzcGF0Y2hlciIsImh0dHA6XC9cL2F1dGgtY3h0LW1nci5laG9zdC1saXZlLmVrcy5laG9zdC1saXZlLmVpc2x6LmNvbSIsImh0dHA6XC9cL3hmZi1wcm9jZXNzb3ItamF2YS5laG9zdC1kZXYuZWtzLmVob3N0LWRldnFhLmVpc2x6LmNvbVwvc3dhZ2dlci11aVwvaW5kZXguaHRtbCIsImh0dHBzOlwvXC9hY2Nlc3MtYXBpLmVic2NvLmNvbSIsImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5Il0sImF6cCI6ImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5IiwiaWR0IjoiaW5zdGl0dXRpb25hbCIsImV4cCI6MTc3MjM3NDkyMiwiaWF0IjoxNzcyMzcxMzIyLCJjbGllbnRfbmFtZSI6IldlYmF1dGggLSBOZXcgRURTIGlkX3Rva2VuIiwianRpIjoiYjI1MjM5MjktMmY4OS00YTMyLWFiNDQtOGJiOWRhZDVmYzUxIiwidXNlcm5hbWUiOiJJbnN0aXR1dGlvbmFsVXNlciJ9.H62PBBCzgRxb62yNUV3zjtuciiIrxsZAyvtzsMRitc-U34nIF3blefh230eS94U-AQ3fhgAkyCZ2CkUVeW6FWLG3LeoiVCOzhpotWnKA2d5t22iVHnYoRMDZAY14u3s6EsMZRBwqDyO8YB7APJ3YcqtNZiep76N1MDC-eUQMKG8_DGTNL8Ehq1ZCQrcoFpiCB_RYkUbADWYUXZu0PLd1lwt18hOWNENY51XrLTz_DvPHcZ8DcY11IHQ60Rr999f1QBx2rV4F5kmZZ-l87lC1Lwo_sYoLc3p5_zLhb_kqLlyVvj8XNWmVa2HSNeGRaHNO8dcJY6ET3wLZ34X74t6Xxg&link_origin=scholar.google.ro" class="button">Learn more</a>
+    </div>
+  </div>
+
+  <div id="42" class="card"> <!-- Lipseste -->
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Current Status of the Interferences between Technology Diffusion and Marketing Management</h3>
+		<p><b>Barkoczi</b>, <b>N.</b>, Bacali, L., Lobonțiu, M. (2014). Proceedings of 4th Review of Management and Economic Engineering International Management Conference "The Management between Profit and Social Responsibility", 18th – 20th September 2014, Todesco Publishing House, Cluj-Napoca, 324 – 331, ISSN 2247 – 8639, ISSN-L 2247-8639.</p>
+    </div>
+  </div>
+
+  <div id="43" class="card">
+    <button class="close-btn">&times;</button>
+    <img src="images/43.jpeg" alt="43" />
+    <div>
+		<h3>Technology Diffusion and the Role of Marketing in Adopting the New Technologies on the Mobile Phone Market</h3>
+		<p><b>Barkoczi</b>, <b>N.</b> (2014). The International Conference of the Carpathian Euro-Region Specialists in Industrial System, CEURSIS 2014, 10th Edition, Baia Mare, U.T. PRESS Publishing House, Cluj-Napoca, 139 – 143, ISBN 978-606-737-003-4.</p>
+		<a href="https://www.researchgate.net/profile/Tihomir-Latinovic/publication/267625968_THE_INTERNATIONAL_CONFERENCE_OF_THE_CARPATHIAN_EURO-REGION'S_SPECIALISTS_IN_INDUSTRIAL_SYSTEMS/links/5453feb30cf2cf51647c286a/THE-INTERNATIONAL-CONFERENCE-OF-THE-CARPATHIAN-EURO-REGIONS-SPECIALISTS-IN-INDUSTRIAL-SYSTEMS.pdf" class="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="44" class="card"> <!-- Lipseste-->
+    <button class="close-btn">&times;</button>
+    <div>
+		<h3>Marketing. Seminar Notebook</h3>
+		<p>Lobonţiu, G., <b>Barkoczi</b>, <b>N.</b> (2014). UT Press Cluj-Napoca.</p>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script>
+    const searchInput = document.getElementById('filterInput');
+    const listItems = document.querySelectorAll('#itemList li');
+    const overlay = document.getElementById('overlay');
+    const cards = document.querySelectorAll('.card');
+	
+	cards.forEach((c) => {  
+      c.style.display = 'none';  
+    }); 
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      listItems.forEach(item => {
+        item.style.display = item.textContent.toLowerCase().includes(query) ? '' : 'none';
+		const text = item.textContent;
+		  const lowerText = text.toLowerCase();
+
+		  if (lowerText.includes(query)) {
+			const startIndex = lowerText.indexOf(query);
+			const endIndex = startIndex + query.length;
+
+			const highlighted =
+			  text.substring(0, startIndex) +
+			  "<strong>" + text.substring(startIndex, endIndex) + "</strong>" +
+			  text.substring(endIndex);
+
+			item.innerHTML = highlighted;
+			item.style.display = '';
+		  } else {
+			item.style.display = 'none';
+		  }
+      });
+    });
+
+    listItems.forEach(item => {
+      const cardId = item.getAttribute('data-card');
+      item.addEventListener('click', () => {
+        document.getElementById(cardId).style.display = 'flex';
+        overlay.style.display = 'block';
+      });
+    });
+
+    document.querySelectorAll('.close-btn').forEach(btn => {
+      btn.addEventListener('click', closeAllCards);
+    });
+    overlay.addEventListener('click', closeAllCards);
+
+    function closeAllCards() {
+      cards.forEach(card => card.style.display = 'none');
+      overlay.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
